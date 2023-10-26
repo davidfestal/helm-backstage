@@ -68,7 +68,7 @@ jobs:
 
       - name: Run chart-testing (latest)
         # test with latest stable backstage-showcase release
-        run: ct install --config ct-install.yaml --helm-extra-set-args="--set=upstream.backstage.image.tag=latest"
+        run: ct install --config ct-install.yaml --helm-extra-set-args="--set=upstream.backstage.image.tag=next"
 
       - name: Run chart-testing (next)
         # test with the next backstage-showcase version (main branch)
