@@ -53,7 +53,11 @@
                                         "title": "Disable the plugin.",
                                         "type": "boolean",
                                         "default": false
-                                    }
+                                    },
+                                    "integrity": {
+                                        "title": "Integrity checksum of the package. Optional for local packages. Supported algorithms include: `sha512`, `sha384` and `sha256`. Refer to https://w3c.github.io/webappsec-subresource-integrity/#integrity-metadata-description for more information",
+                                        "type": "string"
+                                    } 
                                 },
                                 "required": ["package"]
                             }
